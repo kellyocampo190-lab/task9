@@ -14,6 +14,10 @@ return [
     |
     */
 
+    'studio' => [
+        'endpoint' => env('STUDIO_API_URL', 'http://127.0.0.1:18736/api/studio'),
+    ],
+
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),

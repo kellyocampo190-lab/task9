@@ -1,0 +1,23 @@
+{
+  "name": "task9-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.9.0"
+  },
+  "scripts": {
+    "db:setup": "node --env-file-if-exists=.env backend/migrate.js",
+    "build": "node build.mjs",
+    "start": "node --env-file-if-exists=.env backend/server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "pg": "^8.16.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}

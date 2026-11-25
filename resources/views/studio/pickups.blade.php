@@ -2,14 +2,6 @@
 @section('title', 'Pickup schedule')
 @section('content')
     <div class="card">
-        <ol class="list-group list-group-flush pickup-list">
-            @foreach ($orders as $order)
-                <li class="list-group-item">
-                    <strong>{{ $order['pickup'] }}</strong>
-                    <span>{{ $order['design'] }}</span>
-                    <span class="order-number">{{ $order['number'] }}</span>
-                </li>
-            @endforeach
-        </ol>
+        <ol class="list-group list-group-flush pickup-list" data-studio-page="pickups" data-api="{{ route('studio.data', [], false) }}"></ol>
     </div>
 @endsection

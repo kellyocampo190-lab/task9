@@ -56,5 +56,6 @@
 <script src="{{ asset('vendor/jquery-3.7.1/jquery.min.js') }}"></script>
 <script src="{{ asset('vendor/bootstrap-4.6.2/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('vendor/admin-lte-3.2.0/adminlte.min.js') }}"></script>
+<script defer src="{{ asset('build/app.js') }}"></script>
 </body>
 </html>
